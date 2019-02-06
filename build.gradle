@@ -23,8 +23,11 @@ repositories {
 }
 
 dependencies {
-    implementation group: 'org.springframework.boot', name: 'spring-boot', version: '2.1.2.RELEASE'
-    implementation group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.1.2.RELEASE'
-    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.1.2.RELEASE'
-    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.1.4.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot', version: springBootVersion
+    implementation group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: springBootVersion
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: springBootVersion
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.1.3.RELEASE'
+    implementation group: 'org.springframework.security', name: 'spring-security-web', version: '5.1.3.RELEASE'
+    implementation group: 'org.springframework.security', name: 'spring-security-config', version: '5.1.3.RELEASE'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
 }
