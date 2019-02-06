@@ -25,4 +25,6 @@ repositories {
 dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot', version: '2.1.2.RELEASE'
     implementation group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.1.2.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.1.2.RELEASE'
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.1.4.RELEASE'
 }
