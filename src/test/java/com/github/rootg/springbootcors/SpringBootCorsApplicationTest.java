@@ -25,7 +25,7 @@ public class SpringBootCorsApplicationTest {
                 .header("Origin", "SpringBootCorsApplicationTest")
                 .header("Access-Control-Request-Method", "GET"))
                 .andExpect(status().isOk())
-                .andExpect(header().exists("Access-Control-Allow-Origin"))
-                .andExpect(header().exists("Access-Control-Allow-Credentials"));
+                .andExpect(header().stringValues("Access-Control-Allow-Origin", "SpringBootCorsApplicationTest"))
+                .andExpect(header().stringValues("Access-Control-Allow-Credentials", "true"));
     }
 }
